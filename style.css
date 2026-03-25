@@ -11,8 +11,13 @@ body {
   padding: 20px;
 }
 
+.line {
+  background-color: #e3c58b;
+  padding: 0.1em;
+}
+
 .nav {
-  background-color: rgb(215, 215, 194);
+  background-color: #e3c58b;
   width: 100%;
   padding: 1em 0;
   border-radius: 3px;
@@ -38,4 +43,80 @@ body {
 
 button {
   font-family: "Press Start 2P";
+}
+
+.tournament-champions {
+  text-align: center;
+}
+
+.rikishi-grid {
+  display: grid;
+  justify-items: center;
+}
+
+.rikishi-card {
+  background-color: #e3c58b;
+  color: #000;
+  padding: 15px;
+  width: 250px;
+  box-shadow:
+    inset -4px -4px 0px 0px rgba(0, 0, 0, 0.3),
+    inset 4px 4px 0px 0px rgba(255, 255, 255, 0.7),
+    0 0 0 4px #000; /* Outer solid black border */
+  transition: transform 0.1s;
+}
+
+.rikishi-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-container {
+  width: 100%;
+  background-color: #8b0000;
+  border: 4px solid #000;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.pixel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+.rikishi-name {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.rikishi-rank,
+.rikishi-stable {
+  font-size: 11px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.stats-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: 4px solid #000;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 10px;
+  box-shadow: inset -4px -4px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.stats-btn:hover {
+  background-color: #f44336;
+}
+
+.stats-btn:active {
+  /* Reverses the shadow to look like the button is pressed down */
+  box-shadow: inset 4px 4px 0px 0px rgba(0, 0, 0, 0.6);
+  transform: translateY(2px);
 }
