@@ -120,3 +120,33 @@ button {
   box-shadow: inset 4px 4px 0px 0px rgba(0, 0, 0, 0.6);
   transform: translateY(2px);
 }
+
+/* rikishi.index section */
+
+.find-rikishi {
+  margin-top: 3em;
+}
+
+.box-wrap {
+  display: flex;
+  background-color: #e3c58b;
+  border-radius: 5px;
+}
+
+.box {
+  width: 100%;
+  padding: 0 10px 15px;
+  align-items: center;
+}
+
+select {
+  width: 100%;
+}
+
+h5 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-left: 3px;
+}
